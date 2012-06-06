@@ -56,7 +56,7 @@ while True:
     ##     01H: Deleted Record, when record is deleted, byte 08~0B will be set to 00.
     ##     02H: Edited Record 
 
-    lat, lon, speed_limit, camera_type, dir_and_angle, flag = struct.unpack('<iiBBhB', rec)
+    lon, lat, speed_limit, camera_type, dir_and_angle, flag = struct.unpack('<iiBBhB', rec)
 
     lat *= epsilon
     lon *= epsilon
